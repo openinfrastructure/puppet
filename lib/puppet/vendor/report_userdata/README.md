@@ -25,8 +25,8 @@ instances to include userdata.
 Agent behavior is modified to include enforced classes from the catalog in the
 report userdata.
 
-Master behavior is modified to serialize the userdata to JSON and make the data
-available to custom report processors.
+Behavior on both the agent and master is modified to marshall and unmarshall
+the userdata file to and from JSON for transmission over the network.
 
 Finally, enable the patching by creating the file
 `/opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/vendor/report_userdata/enabled`
